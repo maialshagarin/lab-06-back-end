@@ -55,7 +55,10 @@ function getWeather (city) {
           
           
         }
-   
-        
+
+        server.get('*',(request,Response) =>{
+            Response.status(500).send('Sorry, something went wrong');
+        });
+       
         server.listen(PORT, () => console.log(`App listening on ${PORT}`));
         
