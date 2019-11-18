@@ -8,11 +8,12 @@ const PORT = process.env.PORT;
 
 const server = express();
 console.log(server)
+console.log(server)
 
 server.use(cors());
 
 server.get('/',(request,Response) =>{
-   Response.status(200).send('great job');
+   Response.status(200).send('great  job  ');
 })
 
 server.get('/location', (request, response) => {
